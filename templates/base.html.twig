@@ -5,18 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" type="image/png" href="{{ asset('build/images/logo-wild-code-school.svg') }}"/>
         <title>
-            {% block title %}Projet 3 Name{% endblock %}
+            {% block title %}Projet 3 pure{% endblock %}
         </title>
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {# Lancez 'composer require symfony/webpack-encore-bundle' pour commencer à utiliser Symfony UX#}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
-
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/assets/css/chat.min.css">
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
-    </head>
+    <script id="botmanWidget" src='https://cdn.jsdelivr.net/npm/botman-web-widget@0/build/js/chat.js'></script>
+    </head> 
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+            
+        {% endblock %}
     </body>
 </html>
